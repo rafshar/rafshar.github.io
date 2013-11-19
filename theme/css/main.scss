@@ -1,0 +1,260 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+body {
+    /* http://subtlepatterns.com/simple-horizontal-light/ */
+    background: url('../img/background.png');
+    font-family: Gill Sans;
+    font-size: 16px;
+}
+
+a {
+    color: #943a46;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #777;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+pre {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+    @media (max-width: 480px) {
+        body {
+            padding: 0;
+        }
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        body {
+            background: white;
+        }
+
+        .container {
+            border-left: 0;
+            border-right: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+header.page-header {
+    text-transform: lowercase;
+    margin: 0;
+    border-bottom: 0;
+    padding-top: 10px;
+}
+
+    header.page-header a {
+        color: #333;
+    }
+
+    header.page-header a:hover {
+        color: #777;
+    }
+
+    h1 {
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    nav {
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+
+    nav ul, nav li {
+        margin-bottom: 0;
+    }
+
+        nav li {
+            display: inline;
+            padding-left: 3px;
+            line-height: 20px;
+        }
+
+    nav p {
+        line-height: 20px;
+    }
+
+    header.page-header p {
+        text-align: right;
+        font-family: Gill Sans;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #cacaca;
+    }
+
+        .small-circle {
+            display: inline-block;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+        }
+
+        .red.small-circle {
+            background: #943a46;
+        }
+
+        .yellow.small-circle {
+            background: #ffdd00;
+        }
+
+        .green.small-circle {
+            background: #097e64;
+        }
+
+
+article {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 24px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 6px;
+    }
+
+        h2 a {
+            color: #333;
+        }
+
+        h2 a:hover {
+            color: #777;
+        }
+
+        .tech h2 {
+            border-bottom: #943a46 1px solid;
+        }
+
+        .code h2 {
+            border-bottom: #ffdd00 1px solid;
+        }
+
+        .more h2 {
+            border-bottom: #097e64 1px solid;
+        }
+
+        .tech h2 a:hover {
+            color: #943a46;
+        }
+
+        .code h2 a:hover {
+            color: #ffdd00;
+        }
+
+        .more h2 a:hover {
+            color: #097e64;
+        }
+
+    aside {
+        position: absolute;
+        top: 14px;
+        left: -100px;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 730px) {
+        aside {
+            display: none;
+        }
+    }
+
+        .circle {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .red .circle {
+            background: #943a46;
+        }
+
+        .yellow .circle {
+            background: #ffdd00;
+        }
+
+        .green .circle {
+            background: #097e64;
+        }
+
+    h3, h4 {
+        color: #097e64;
+        margin-top: 20px;
+    }
+
+
+    h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .article-meta {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+.paginator {
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+footer.page-footer {
+    text-align: center;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 30px;
+}
